@@ -1,0 +1,99 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 500px;
+    min-width: 100px;
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  .product__rating {
+    display: flex;
+    margin: 10px 15px;
+    
+    
+  }
+  .image{
+    width: 100%;
+    max-height: 400px;
+    padding-top: 15px;
+  }
+  
+ .image > img {
+    max-height: 200px;
+    
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: contain;
+    transition: transform 1s;
+} 
+  .image > img:hover { transform: translate(1px, 15px); -webkit-transform: translate(1px, 15px); -moz-transform: translate(1px, 15px); -ms-transform: translate(1px, 15px); -o-transform: translate(1px, 15px);
+}
+
+  .product__price {
+    margin-top: 5px;
+  }
+  
+  .product__info {
+    height: 100px;
+    border-radius: 5px;
+    /* box-shadow:  0px 0px 2px 2px rgba(0,0,0,0.1),0px 0px 2px 2px rgba(0,0,0,0.1); */
+    margin-bottom: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .product__info > p {
+    margin-left: 10px;
+    font-weight: 600;
+  }
+
+.product > button {
+    width: 140px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    font-weight: 550;
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 20px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-transition: all 0.1s ease 0s;
+    -moz-transition: all 0.1s ease 0s;
+    -ms-transition: all 0.1s ease 0s;
+    -o-transition: all 0.1s ease 0s;
+}
+.product > button:hover {
+    background-color:  #f0c14bab;
+}
